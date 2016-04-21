@@ -1,0 +1,14 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        "./node_modules/babel-preset-es2015"
+      ]
+    },
+    "test": {
+      "presets": [
+        "./node_modules/babel-preset-es2015"
+      ]
+    }
+  }
+}
