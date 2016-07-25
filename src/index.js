@@ -1,4 +1,4 @@
-import {getDefaultKeyBinding, EditorState, Modifier, RichUtils, SelectionState} from 'draft-js'
+import {EditorState, Modifier, RichUtils, SelectionState} from 'draft-js'
 import trackCharacters from './trackCharacters'
 
 /**
@@ -77,7 +77,6 @@ function autoListPlugin () {
           return commands.OL
         }
       }
-      return getDefaultKeyBinding(e)
     },
 
     /**
