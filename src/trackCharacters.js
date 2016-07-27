@@ -10,9 +10,9 @@ const characterMapping = {
   'shift': {
     56: '*',
     221: '*',
-    190: '.'
-  }
-};
+    190: '.',
+  },
+}
 
 /**
  * Track the characters generated from keyboard input
