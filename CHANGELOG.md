@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# v0.0.3 2016-07-27
+
+### Fixed
+
+* Add support for azerty keyboards (thanks, @grsmto!)
+
 # v0.0.2 2016-07-25
 
 ### Fixed
