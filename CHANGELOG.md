@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# v1.0.0 2017-01-30
+
+### Fixed
+
+* Handle changed return value behaviour for key commands in draft-js — [Thanks to @tomconroy](https://github.com/icelab/draft-js-autolist-plugin/pull/8)!
+
 # v0.0.3 2016-07-27
 
 ### Fixed

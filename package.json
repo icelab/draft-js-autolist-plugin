@@ -1,6 +1,6 @@
 {
   "name": "draft-js-autolist-plugin",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Automatically create ordered/unordered lists in draft-js as you type",
   "main": "lib/index.js",
   "scripts": {
