@@ -107,9 +107,9 @@ function autoListPlugin () {
         content = editorState.getCurrentContent()
         editorState = EditorState.forceSelection(editorState, content.getSelectionAfter())
         setEditorState(editorState)
-        return true
+        return 'handled'
       }
-      return false
+      return 'not-handled'
     },
 
     /**
@@ -174,9 +174,9 @@ function autoListPlugin () {
         editorState = EditorState.push(editorState, content)
         editorState = EditorState.forceSelection(editorState, content.getSelectionAfter())
         setEditorState(editorState)
-        return true
+        return 'handled'
       }
-      return false
+      return 'not-handled'
     },
   }
 }
