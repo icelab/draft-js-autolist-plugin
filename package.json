@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/icelab/draft-js-autolist-plugin",
   "peerDependencies": {
-    "draft-js": ">=0.5.0"
+    "draft-js": ">=0.10.1"
   },
   "devDependencies": {
     "babel-cli": "6.7.5",
