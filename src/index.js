@@ -84,14 +84,12 @@ function autoListPlugin () {
      * Means that lists act as you’d expect while typing.
      *
      * @param  {KeyboardEvent} e Synthetic keyboard event from draftjs
-     * @param  {Function} options.getEditorState Getter function passed by
-     * the draft-js-plugin-editor
+     * @param  {Object} editorState Current editor state
      * @param  {Function} options.setEditorState Setter function passed by
      * the draft-js-plugin-editor
-     * @return {Boolean} Did we handle the return or not?
+     * @return {String} Did we handle the return or not?
      */
-    handleReturn (e, { getEditorState, setEditorState }) {
-      let editorState = getEditorState()
+    handleReturn (e, editorState, { setEditorState }) {
       let content = editorState.getCurrentContent()
 
       // Retrieve current block
@@ -114,12 +112,13 @@ function autoListPlugin () {
 
     /**
      * Handle our custom `commands`
-     * @param  {[type]} command                [description]
-     * @param  {[type]} options.getEditorState [description]
-     * @param  {[type]} options.setEditorState [description]
-     * @return {[type]}                        [description]
+     * @param  {String} command The current command to respond to
+     * @param  {Object} editorState Current editor state
+     * @param  {Function} options.setEditorState Setter function passed by
+     * the draft-js-plugin-editor
+     * @return {String} Did we handle the return or not?
      */
-    handleKeyCommand (command, { getEditorState, setEditorState }) {
+    handleKeyCommand (command, editorState, { setEditorState }) {
       if (command === commands.UL || command === commands.OL) {
         // Set up the base types/checks
         let listType = blockTypes.UL
@@ -129,7 +128,6 @@ function autoListPlugin () {
           listTest = (text) => OL_INTERCEPT_REGEX.test(text)
         }
 
-        let editorState = getEditorState()
         let content = editorState.getCurrentContent()
 
         // Retrieve the focused block
