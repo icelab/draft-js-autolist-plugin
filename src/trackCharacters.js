@@ -5,6 +5,7 @@
 const characterMapping = {
   106: '*',
   110: '.',
+  173: '-',
   189: '-',
   190: '.',
   'shift': {
