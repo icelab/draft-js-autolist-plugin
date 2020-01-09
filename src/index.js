@@ -114,11 +114,12 @@ function autoListPlugin () {
      * Handle our custom `commands`
      * @param  {String} command The current command to respond to
      * @param  {Object} editorState Current editor state
+     * @param  {Number} eventTimeStamp When the event happened.
      * @param  {Function} options.setEditorState Setter function passed by
      * the draft-js-plugin-editor
      * @return {String} Did we handle the return or not?
      */
-    handleKeyCommand (command, editorState, { setEditorState }) {
+    handleKeyCommand (command, editorState, eventTimeStamp, { setEditorState }) {
       if (command === commands.UL || command === commands.OL) {
         // Set up the base types/checks
         let listType = blockTypes.UL

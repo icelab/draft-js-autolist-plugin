@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# Unreleased
+
+* Added support for draft-js v0.11.0
+
 # v2.0.0 2017-06-19
 
 * Update to match [method signature changes in draft-js v0.10.1](https://github.com/draft-js-plugins/draft-js-plugins/issues/736)
